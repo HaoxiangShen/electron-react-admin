@@ -134,7 +134,7 @@ const Login = (props: LoginProps) => {
       </div>
       <Form form={form} className={styles.loginForm} onFinish={doLogin}>
         <Form.Item name="account" rules={[{ required: true, message: '请输入手机号!' }]}>
-          <AutoComplete size="large" placeholder="请输入手机号" onSelect={selectAccount}>
+          <AutoComplete size="large" placeholder="请输入手机号 admin" onSelect={selectAccount}>
             {userList.map(i => (
               <Option key={i.account} value={i.account}>
                 <div className={styles.accountOption}>{i.account}</div>
@@ -143,7 +143,7 @@ const Login = (props: LoginProps) => {
           </AutoComplete>
         </Form.Item>
         <Form.Item name="password" rules={[{ required: true, message: '请输入密码!' }]}>
-          <Password size="large" placeholder="请输入密码" />
+          <Password size="large" placeholder="请输入密码 admin" />
         </Form.Item>
         <div>
           <Form.Item noStyle name="remember" valuePropName="checked">
