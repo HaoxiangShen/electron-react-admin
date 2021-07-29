@@ -1,0 +1,12 @@
+{
+  "defaultSeverity": "error",
+  "plugins": ["react-hooks"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+],
+  "jsRules": null
+}

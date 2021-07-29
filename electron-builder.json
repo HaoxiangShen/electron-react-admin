@@ -1,0 +1,26 @@
+{
+  "productName": "electronReactAdmin",
+  "electronDownload": {
+    "mirror": "https://npm.taobao.org/mirrors/electron/"
+  },
+  "files": ["dist/ui","package.json"],
+  "directories": {
+    "output": "release"
+  },
+  "asar": true,
+  "win": {
+    "icon": "static/autowork.png",
+    "requestedExecutionLevel": "highestAvailable"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": true
+  },
+  "publish": [
+    {
+      "provider": "generic",
+      "url": "http://localhost"
+    }
+  ]
+}

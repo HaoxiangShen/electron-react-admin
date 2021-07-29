@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "lib": ["ESNext", "dom"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "@ui/*": ["ui/*"],
+      "@src/*": ["src/*"],
+      "@@/*": ["ui/.umi/*"]
+    }
+  },
+  "include": ["src", "ui"],
+  "exclude": ["node_modules/*"]
+}

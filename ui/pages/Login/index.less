@@ -1,0 +1,112 @@
+.loginTitle {
+  padding-top: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+
+  .underLine {
+    display: inline-block;
+    width: 360px;
+    height: 1px;
+    margin-top: 20px;
+    background: linear-gradient(
+      270deg,
+      rgba(193, 199, 226, 0) 0%,
+      rgba(193, 199, 226, 1) 53%,
+      rgba(193, 199, 226, 0) 100%
+    );
+  }
+}
+
+.loginForm {
+  margin-top: 30px;
+  padding: 0 63px;
+
+  .forget {
+    color: #3597ff;
+    float: right;
+    font-size: 12px;
+  }
+}
+
+.register {
+  text-align: center;
+  margin-top: 12px;
+
+  a {
+    color: #3597ff;
+  }
+}
+
+.offline {
+  text-align: center;
+  margin-top: 40px;
+
+  img {
+    width: 16px;
+    height: 12px;
+  }
+
+  .offlineBtn {
+    width: 108px;
+    border-radius: 12px;
+    color: #767c93;
+  }
+}
+
+.loginBtn {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 35px;
+}
+
+.machineCode {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.accountSelectPanel {
+  position: absolute;
+  width: 315px;
+  z-index: 2;
+  top: 40px;
+  left: 0px;
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+  overflow: auto;
+  transition: max-height 0.1s;
+  .accountSelectItem {
+    margin-top: 4px;
+    display: flex;
+    line-height: 32px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-left: 12px;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 4px;
+    }
+    .account {
+      width: 90%;
+    }
+  }
+}
+.accountOption {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  align-items: center;
+}
+
+.close {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}

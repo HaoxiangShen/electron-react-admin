@@ -1,0 +1,66 @@
+.updateWindow {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.windowTitleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 0 0 rgba(23, 34, 72, 0.1);
+  color: #243262;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.windowTitle {
+  -webkit-app-region: drag;
+}
+
+.titleClose {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: auto 0 auto 0;
+}
+
+.updateContent {
+  padding: 60px 70px 40px;
+  height: 100%;
+}
+
+.updating {
+  margin-top: 40px;
+}
+
+.progress {
+  text-align: center;
+  color: #3597ff;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.tip {
+  color: #243262;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.updateInfo {
+  position: absolute;
+  text-align: center;
+  color: #767c93;
+  font-size: 14px;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+}
